@@ -1,0 +1,71 @@
+body {
+    min-height: 90vh;
+    min-width: 90vw;
+}
+.modal-container {
+    background-color:  rgba(0,0,0, 0.6);
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .modal-container.show-modal {
+    display: block;
+  }
+  
+  .modal {
+    background-color: white;
+    border-radius: 3px;
+    box-shadow: 0, 0, 10px rgba(0,0,0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 24px;
+    max-width: 100%;
+    width: 300px;
+  }
+  
+  .close-btn {
+    background-color: transparent;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    border: 0;
+  }
+
+  .modal input {
+      display: grid;
+  }
+
+  .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 0;
+      padding: 0;
+      border-bottom: 1px solid black;
+  }
+
+  .library {
+      display: grid;
+      margin: 24px 96px 0 96px;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      column-gap: 24px;
+      row-gap: 24px;
+  }
+
+  .card {
+      display: grid;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      border: 1px solid black;
+      padding: 16px;
+      row-gap: 8px;
+  }
