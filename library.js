@@ -32,7 +32,7 @@ function bookLoop(){
         let cardBody = document.createElement('div');
         cardBody.setAttribute('class', 'card-body');
         let pTag = document.createElement('p');
-        pTag.innerHTML += `${book.author}<br>`;
+        pTag.innerHTML += `By: ${book.author}<br>`;
         pTag.innerHTML += `${book.pages} pages`;
         cardBody.appendChild(pTag);
 
